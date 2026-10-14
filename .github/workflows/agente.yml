@@ -11,9 +11,9 @@
 name: Agente de Soporte con IA
 
 on:
-  # Disparo automatico: cada hora en punto
+  # Disparo automatico: cada 5 minutos (minimo permitido por GitHub Actions)
   schedule:
-    - cron: "0 * * * *"
+    - cron: "*/5 * * * *"
 
   # Disparo al subir cambios a main
   push:
